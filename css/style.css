@@ -29,7 +29,7 @@
 }
 
 body {
-    background-color: rgb(192, 201, 172);
+    background: linear-gradient(to right bottom, rgb(8, 8, 8) 100%, rgb(12, 12, 12) 80%);
 }
 
 h1 {
@@ -63,4 +63,41 @@ nav {
     float: right;
     vertical-align: middle;
     line-height: 47px;
+}
+
+#contenedor {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: tomato;
+}
+
+.buscador {
+    width: 70%;
+    margin: auto;
+    background-color: transparent;
+    text-align: center;
+    overflow: hidden;
+}
+
+#entrada_busqueda_input {
+    float: left;
+    width: 95%;
+    height: 32px;
+    border-radius: 13px 0px 0px 13px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    border-color: transparent;
+    border-width: 0;
+}
+
+#buscar_button {
+    float: left;
+    width: 5%;
+    height: 32px;
+    border-radius: 0px 13px 13px 0px;
+    border-color: transparent;
+    border-width: 0 0 0 1px;
+    border-left-color: black;
+    cursor: pointer;
 }
