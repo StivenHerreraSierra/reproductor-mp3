@@ -7,24 +7,58 @@
     <title>Reproductor MP3</title>
     <meta name="author" content="Stiven Herrera Sierra">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <a href="#"><h1><span class="logo"></span> Reproductor</h1></a>
-        <nav><a href="#"><h2><span class="logo"></span> GitHub</h2></a></nav>
+    <header class="header">
+        <a class="header__home" href="#"><h1><span class="logo"></span> Reproductor</h1></a>
+        <nav class="header__nav"><a href="#"><h2><span class="logo"></span> GitHub</h2></a></nav>
     </header>
     
     <section>
         <div id="contenedor">
-            <div class="buscador">
+            <div class="contenedor__buscador">
                 <input type="text" name="entrada_busqueda_input" id="entrada_busqueda_input">
                 <button class="logo" id="buscar_button"></button>
+            </div>
+
+            <div class="contenedor__reproductor">
+                <div class="reproductor__cover">
+                    <img class="contenedor__reproductor--cover" src="img/vinyl.png" alt="Cover canción">
+                </div>
+
+                <div class="contenedor__controles">
+                    <button class="reproductor__back" id="anterior_button">
+                        <img class="reproductor--logo" id="anterior_img" src="img/back.png" alt="Anterior">
+                    </button>
+                    <button class="reproductor_start" id="iniciar_button">
+                        <img class="reproductor--logo" id="iniciar_img" src="img/start.png" alt="Reproducir">
+                    </button>
+                    <button class="reproductor_next" id="siguiente_button">
+                        <img class="reproductor--logo" id="siguiente_img" src="img/forward.png" alt="Siguiente">
+                    </button>
+                    <div class="controles__volumen">
+                        <input class="controles__volumen--range" id="volumen_range" type="range" max="100" min="0" step="1">
+                        <label for="volumen_button" id="volumen_label"></label>
+                    </div>
+                </div>
+                <div class="reproductor__file">
+                    <label for="selector_mp3">Cargar canción</label>
+                    <input type="file" name="" id="selector_mp3" class="contenedor__file--input" multiple accept="audio/*">
+                </div>
+            </div>
+
+            <div class="contenedor__album">
+                <div class="album">
+                    
+                </div>
             </div>
         </div>
     </section>
     <aside></aside>
     <footer></footer>
-
-    <script src="js/script.js"></script>
 </body>
+
+    <script src="bower_components/id3/src/id3.ts"></script>
+    <script src="js/script.js"></script>
 </html>
