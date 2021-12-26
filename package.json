@@ -1,0 +1,22 @@
+{
+  "name": "reproductor-mp3",
+  "version": "1.0.0",
+  "description": "Migración del proyecto 'Reproductor MP3' a ReactJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StivenHerreraSierra/reproductor-mp3.git"
+  },
+  "author": "Stiven Herrera Sierra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StivenHerreraSierra/reproductor-mp3/issues"
+  },
+  "homepage": "https://github.com/StivenHerreraSierra/reproductor-mp3#readme",
+  "dependencies": {
+    "create-react-app": "^5.0.0"
+  }
+}
