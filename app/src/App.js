@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/header/Header';
 import Browser from './components/content/browser/Browser';
-import PlayerControls from './components/content/player/PlayerControls';
+import Player from './components/content/player/Player';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="App-container">
           <Browser />
 
-	  <PlayerControls />
+	  <Player />
       </div>
     </div>
   );
